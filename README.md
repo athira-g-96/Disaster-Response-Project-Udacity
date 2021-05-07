@@ -6,7 +6,7 @@ Python project to classify disaster response messages using Machine Learning mod
 1. [Installation](#Installation)
 2. [Project Description](#Project-Description)
 3. [File Description](#File-Description)
-4. [To Execute Pipelines](#To execute pipelines)
+4. [To Execute Pipelines](#To-Execute-Pipelines)
 6. [Results](#Results)
 7. [Acknowledgments](#Acknowledgements)
 
