@@ -79,9 +79,12 @@ Machine learning model ,Linear SVC is used to classify the messages into these 3
 ## Results
 
 A web app was created using the dataset, where a user input message related to a disaster can be classified into one of the 36 categories provided.
-![Web_app_visualisations]()
-![Web_app_visualisations]()
-![Web_app]()
+  * Web_app Visualisations
+  
+![Web_app_visualisations](https://github.com/athira-g-96/Disaster-Response-Project-Udacity/blob/main/web_pics/visualisations.png)
+  * Web_app Classification
+
+![Web_app](https://github.com/athira-g-96/Disaster-Response-Project-Udacity/blob/main/web_pics/webapp.png)
 
 ## Acknowledgments
 
