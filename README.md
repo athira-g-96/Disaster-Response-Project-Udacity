@@ -32,21 +32,22 @@ Machine learning model ,Linear SVC is used to classify the messages into these 3
 
 ## File Description
 
-```- app # flask app files
-| - template # file with html code and python code for the webpage
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
+```
+- app               # flask app files
+| - template        # file with html code and python code for the webpage
+| |- master.html    # main page of web app
+| |- go.html        # classification result page of web app
+|- run.py           # Flask file that runs app
 
 - data
-|- disaster_categories.csv  # data with categories of each messsage
-|- disaster_messages.csv  # data with messages to classify
-|- process_data.py # code to clean and load data to sql database
-|- DisasterResponse.db   # database to save clean data to
+|- disaster_categories.csv    # data with categories of each messsage
+|- disaster_messages.csv      # data with messages to classify
+|- process_data.py            # code to clean and load data to sql database
+|- DisasterResponse.db        # database to save clean data to
 
 - models
-|- train_classifier.py # code with machine learning model code and evaluation matrix
-|- classifier.pkl  # saved model 
+|- train_classifier.py       # code with machine learning model code and evaluation matrix
+|- classifier.pkl            # saved model 
 
 - README.md
  ```
