@@ -1,19 +1,18 @@
 # Disaster-Response-Project-Udacity
-Python project to classify disaster response messages using Machine Learning models and to create a web app using the dataset and model with Flask.
+Python project to classify disaster response messages using Machine Learning models and create a web app with Flask.
 
 ## Contents
 
 1. [Installation](#Installation)
 2. [Project Description](#Project-Description)
 3. [File Description](#File-Description)
-4. [Results](#Results)
-5. [Acknowledgments](#Acknowledgements)
+4. [To Execute Pipelines](#To execute pipelines)
+6. [Results](#Results)
+7. [Acknowledgments](#Acknowledgements)
 
 
 ## Installation
-There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python.
-
-Libraries used are:
+The necessary libraries to run the code :
 * Pandas
 * Numy
 * Scikit learn
@@ -27,8 +26,8 @@ Libraries used are:
 * pickle
 
 ## Project Description
-This project is a small attempt to classify messages related to disaster so as to increase the efficiency of disaster response. Dataset of approximately 30,000 messages was provided by [Figure eight](https://appen.com/). The messages in the dataset is categorised into 36 different categories like, 'medical_products','aid_centres','requests' etc.
-Machine learning model ,Linear SVC is used to classify the messages into these 36 categories. A webpage is created using the dataset and model where any user input messages related to a disaster (eg: Need clothing , Shortage in water, Need Medical supplies etc) can be classified.
+This project is a small attempt to classify messages that can inturn increase efficiency of disaster response systems. Dataset for the project which consists of 30,000 messages was provided by [Figure eight](https://appen.com/). The messages in this dataset is categorised into 36 different categories like, 'medical_products','aid_centres','requests' etc.
+Machine learning model (Linear SVC) is used to classify the messages into these 36 categories. A webpage is created using the dataset and model where user input messages (eg: Need clothing , Shortage in water, Need Medical supplies etc) can be classified.
 
 ## File Description
 
@@ -75,7 +74,25 @@ Machine learning model ,Linear SVC is used to classify the messages into these 3
 * `run.py` : File contains
      *  code to classify the user input message in web app
      *  code for visualisations of the training data of the model
+     
+## To Execute Pipelines
 
+Execute the following code in the terminal to run the ETL_pipeline (process_data.py) and Machine_learning pipeline (train_classifier.py) respectively
+
+ * `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+ * `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+ 
+ To run the web app (run.py) execute the following code
+ 
+ * `python run.py`
+ 
+ To open the web app
+ 
+ * ```env|grep WORK                   # to create a virtual environment ```
+ * Get the SPACEID and SPACEDOMAIN 
+ * Type the following in new web browser __https://SPACEID-3001.SPACEDOMAIN__  
+ 
+ 
 ## Results
 
 A web app was created using the dataset, where a user input message related to a disaster can be classified into one of the 36 categories provided.
